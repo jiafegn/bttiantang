@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+
+class Config:
+    mysql_host = ""
+    mysql_user = ""
+    mysql_password = ''
+    mysql_dbname = "bttiantang"
+    mysql_port = 3306
+    mysql_charset = 'utf8'
+    # mysql重试次数
+    mysql_retry_times = 5
+    # mysql 连接池 最大 连接数
+    mysql_max_cached = 5
+
+    redis_host = ""
+    redis_port = 6379
+    redis_key_queue = 'yhouse:rick:xiaomishu:shangquan:queue'
+    redis_key_error_queue = 'yhouse:rick:meishichina:error:queue'
+    redis_key_error_hash = 'yhouse:rick:meishichina:category:hash'
+
+    url_main = 'http://www.bttiantang.com'
+    sleep_time = 3600
+    headers_path = '/mnt/crawler/bttiantang/'
+    headers_referer = 'http://www.bttiantang.com/'
